@@ -2,7 +2,7 @@ baseURL = "https://divazone.github.io"
 
 # theme
 # 主题
-theme = "FixIt"
+theme = "LoveIt"
 # themes directory
 # 主题目录
 #themesDir = "../.."
@@ -119,7 +119,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "https://github.com/hugo-fixit/FixIt"
+  gitRepo = "https://github.com/dillonzq/LoveIt"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -312,10 +312,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # 主页的社交信息设置
   [params.social]
     GitHub = "divazone"
-    Linkedin = ""
+    Linkedin = "divazone"
     Twitter = ""
     Instagram = ""
-    Facebook = ""
+    Facebook = "kingweirong"
     Telegram = ""
     Medium = ""
     Gitlab = ""
@@ -384,7 +384,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     HackTheBox = ""
     RootMe= ""
     Email = ""
-    RSS = ""
+    RSS = "index.xml"
 
   # Page global config
   # 文章页面全局配置

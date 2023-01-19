@@ -1,8 +1,8 @@
 ---
-title: "About Date Huang"
+title: "About Divazone King"
 date: 2022-07-09
 draft: false
-description: "About Date Huang"
+description: "About Divazone King"
 
 lightgallery: true
 ---
