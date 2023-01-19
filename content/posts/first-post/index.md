@@ -1,23 +1,17 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
----
-
----
-title: "{{ replace .Name "-" " " | title }}"
+title: "First Post"
 subtitle: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
-author: ""
+date: 2023-01-19T11:50:25+08:00
+lastmod: 2023-01-19T11:50:25+08:00
+draft: false
+author: "Divazone King"
 authorLink: ""
 description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: ["misc"]
+categories: ["misc"]
 
 featuredImage: ""
 featuredImagePreview: ""
@@ -34,7 +28,7 @@ rssFullText: false
 
 toc:
   enable: true
-  auto: false
+  auto: true
 code:
   copy: true
   maxShownLines: 50
@@ -65,4 +59,4 @@ seo:
   # ...
 ---
 
-<!--more-->
+總之是個值得紀念的第一個文章
