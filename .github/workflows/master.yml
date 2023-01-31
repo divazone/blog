@@ -28,7 +28,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          cname: divazone.github.io
+          cname: blog.divazone.tw
 
       - name: Upload Records
         # Use Algolia Upload Records action
