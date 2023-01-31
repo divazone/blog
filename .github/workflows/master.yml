@@ -29,3 +29,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: divazone.github.io
+
+      - name: Upload Records
+        # Use Algolia Upload Records action
+        uses: wangchucheng/algolia-uploader@master
+        # Set environment variables
+        with:
+          app_id: BR8J22JKVH
+          admin_key: ${{secrets.ADMIN_API_KEY}}
+          index_name: blog.divazone
+          index_file_path: ./public/algolia.json

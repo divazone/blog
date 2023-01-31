@@ -243,7 +243,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Search config
   # 搜索配置
   [params.search]
-    enable = false
+    enable = true
     # type of search engine ["lunr", "algolia"]
     # 搜索引擎的类型 ["lunr", "algolia"]
     type = "algolia"
@@ -266,9 +266,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      index = "blog.divazone"
+      appID = "BR8J22JKVH"
+      searchKey = "4d018756130ab82ac57f3cd9c585ea19"
 
   # Home page config
   # 主页信息设置
@@ -315,7 +315,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Linkedin = "divazone"
     Twitter = ""
     Instagram = ""
-    Facebook = "kingweirong"
+    Facebook = ""
     Telegram = ""
     Medium = ""
     Gitlab = ""
@@ -672,10 +672,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Analytics config
   # 网站分析配置
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "G-4BPYV5FEFR"
       # whether to anonymize IP
       # 是否匿名化用户 IP
       anonymizeIP = true
@@ -800,10 +800,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   isPlainText = true
   isHTML = false
 
+[outputFormats.Algolia]
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
 # Options to make hugo output files
 # 用于 Hugo 输出文档的设置
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "Algolia"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
