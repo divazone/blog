@@ -1,7 +1,7 @@
 ---
 title: "在JAVA中建立Hibernate SessionFactory的三種方法"
 date: 2023-05-08T11:00:25+08:00
-lastmod: 2023-05-08T11:00:25+08:00
+lastmod: 2024-03-08T09:01:25+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""
@@ -58,7 +58,9 @@ public static Session getCurrentSessionFromConfig() {
 
 ## 2. 使用Metatada和ServiceRegistry class在Hibernate中建立SessionFactory
 
-個人覺得用xml檔來儲存像是資料庫位址與帳密實在是太危險，好在能夠使用一個HashMap來把資料儲存起來傳送給ServiceRegistry，這樣就不需要去建立hibernate.cfg.xml了
+~~個人覺得用xml檔來儲存像是資料庫位址與帳密實在是太危險，好在能夠使用一個HashMap來把資料儲存起來傳送給ServiceRegistry，這樣就不需要去建立hibernate.cfg.xml了~~
+
+更正:將資料庫與帳密等變數資訊加密後放置在主機的環境變數會是較好的做法
 
 ```java
 public static Session getCurrentSession() {
