@@ -6,7 +6,7 @@ draft: false
 author: "Divazone King"
 authorLink: ""
 tags: ["aws"]
-categories: ["coding_life"]
+categories: ["aws"]
 ---
 
 在使用AWS Lambda的時候，發現它裡面的時區並不會使用使用者帳號所設定的時區，都是使用UTC時區。

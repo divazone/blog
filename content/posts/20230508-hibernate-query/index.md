@@ -5,8 +5,8 @@ lastmod: 2023-05-08T10:50:25+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""
-tags: ["Hibernate", "Java"]
-categories: ["coding_life"]
+tags: ["hibernate", "java"]
+categories: ["java"]
 ---
 
 ## 1. HQL（Hibernate Query Language）

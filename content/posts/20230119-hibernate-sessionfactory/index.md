@@ -5,8 +5,8 @@ lastmod: 2024-03-08T09:01:25+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""
-tags: ["Hibernate", "Java"]
-categories: ["coding_life"]
+tags: ["hibernate", "java"]
+categories: ["java"]
 ---
 
 方法有這三種
@@ -108,6 +108,5 @@ public static SessionFactory getCurrentSessionFromJPA() {
 ```
 
 
-## 參考資料 
- 
+## References 
  [Build a Hibernate SessionFactory by example](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/3-ways-to-build-a-Hibernate-SessionFactory-in-Java-by-example?utm_source=pocket_saves)
