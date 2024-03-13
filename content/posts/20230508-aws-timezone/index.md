@@ -1,7 +1,7 @@
 ---
 title: "AWS Lambda 時區變更"
-date: 2023-05-08T10:58:25+08:00
-lastmod: 2023-05-08T10:58:25+08:00
+date: 2023-05-08T10:58:00+08:00
+lastmod: 2023-05-08T10:58:00+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""

@@ -1,7 +1,7 @@
 ---
 title: "在JAVA中建立Hibernate SessionFactory的三種方法"
-date: 2023-05-08T11:00:25+08:00
-lastmod: 2024-03-08T09:01:25+08:00
+date: 2023-05-08T11:00:00+08:00
+lastmod: 2024-03-08T09:01:00+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""

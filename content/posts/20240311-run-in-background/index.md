@@ -1,7 +1,7 @@
 ---
 title: "把程式移動至背景執行的方式"
-date: 2024-03-11T11:38:25+08:00
-lastmod: 2024-03-11T11:38:25+08:00
+date: 2024-03-11T11:38:00+08:00
+lastmod: 2024-03-11T11:38:00+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""

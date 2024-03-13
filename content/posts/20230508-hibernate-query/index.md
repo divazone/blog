@@ -1,7 +1,7 @@
 ---
 title: "Hibernate三種查詢資料的方式"
-date: 2023-05-08T10:50:25+08:00
-lastmod: 2023-05-08T10:50:25+08:00
+date: 2023-05-08T10:50:00+08:00
+lastmod: 2023-05-08T10:50:00+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""

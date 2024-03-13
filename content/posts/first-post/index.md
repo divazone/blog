@@ -1,7 +1,7 @@
 ---
 title: "First Post"
-date: 2023-01-19T11:50:25+08:00
-lastmod: 2023-01-19T11:50:25+08:00
+date: 2023-01-19T11:50:00+08:00
+lastmod: 2023-01-19T11:50:00+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""
