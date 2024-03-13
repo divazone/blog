@@ -18,8 +18,9 @@ categories: ["container"]
 另外需要提醒的一點是，當我們在一個運行著的容器中編輯一個文件後需要確保所依賴的這個文件的process收到了文件編輯的通知並進行了設定更新，如果沒有類似的通知機制，需要手動重啟這些process使修改能生效。
 
 下面假設你所使用的容器中沒有 vi 等文字編輯工具，我們以 openjdk:23 作為示範：
-```
-➜ docker run -it openjdk:23 bash
+```bash
+docker run -it openjdk:23 bash
+
 root@d0fb3a0b527c:/# vi demo.java
 bash: vi: command not found
 root@d0fb3a0b527c:/#
@@ -28,18 +29,18 @@ root@d0fb3a0b527c:/#
 ## 以下介紹五種常用方法：
 ### 方法1：使用掛載
 準備Dockerfile：
-```
+```dockerfile
 FROM openjdk:23
 WORKDIR "/app"
 ```
 
 編譯鏡像：
-```
+```bash
 docker build -t sample .
 ```
 
 最後，運行標記為掛載的容器：
-```
+```bash
 docker run --rm -it --name=sample_demo -v $PWD/app-vol:/app sample bash
 ```
 
@@ -47,18 +48,18 @@ docker run --rm -it --name=sample_demo -v $PWD/app-vol:/app sample bash
 
 ### 方法2：安裝編輯器
 準備Dockerfile：
-```
+```dockerfile
 FROM openjdk:23
 WORKDIR "/app"
 ```
 
 編譯鏡像：
-```
+```bash
 docker build -t sample .
 ```
 
 啟動容器並進行vim編輯器安裝：
-```
+```bash
 docker run --rm -it --name=sample_demo sample bash
 
 root@4b72fbabb0af:/app# apt-get update
@@ -66,7 +67,7 @@ root@4b72fbabb0af:/app# apt-get -y install vim
 ```
 
 如果需要重複使用，更好的做法是寫在 Dockerfile 中：
-```
+```dockerfile
 FROM openjdk:23
 RUN ["apt-get", "update"]
 RUN ["apt-get", "-y", "install", "vim"]
@@ -74,11 +75,11 @@ WORKDIR "/app"
 ```
 
 ### 方法3：將文件複製到正在運行的容器中
-```
+```bash
 docker cp demo.java sample_demo:/app
 ```
 另一個類似的方法只要 docker exec 和 cat 結合使用，下面的指令同樣把 demo.java 檔案複製到正在運作的容器中：
-```
+```bash
 docker exec -i sample_demo sh -c 'cat > /app/demo.java' < demo.java
 ```
 
@@ -89,7 +90,7 @@ docker exec -i sample_demo sh -c 'cat > /app/demo.java' < demo.java
 這種方法只是為了開拓思路，並不會在實際中使用，因為並不安全。
 
 準備Dockerfile：
-```
+```dockerfile
 FROM openjdk:23
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "openssh-server"]
@@ -105,13 +106,13 @@ CMD ["/usr/sbin/sshd", "-D"]
 因為我們要藉助 scp 來遠端進行檔案編輯，所以需要安裝 openssh-server 並開放其連接埠。
 
 編譯並運行：
-```
+```bash
 docker build -t sample .
 docker run --rm -p 2222:22 -d --name=sample_demo sample
 ```
 
 現在我們可以使用以下指令來編輯demo.java檔了：
-```
+```bash
 vim scp://root@localhost:2222//app/demo.java
 ```
 
@@ -119,6 +120,6 @@ vim scp://root@localhost:2222//app/demo.java
 
 
 編輯完成儲存並退出後，可以使用下面的命令來驗證檔案確實被建立和儲存了：
-```
+```bash
 docker exec -it sample_demo cat /app/demo.java
 ```
