@@ -109,4 +109,4 @@ public static SessionFactory getCurrentSessionFromJPA() {
 
 
 ## References 
- [Build a Hibernate SessionFactory by example](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/3-ways-to-build-a-Hibernate-SessionFactory-in-Java-by-example?utm_source=pocket_saves)
+[Build a Hibernate SessionFactory by example](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/3-ways-to-build-a-Hibernate-SessionFactory-in-Java-by-example?utm_source=pocket_saves)

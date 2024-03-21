@@ -1,4 +1,4 @@
-baseURL = "https://divazone.github.io"
+baseURL = "https://blog.divaozne.tw"
 
 # theme
 # 主题
@@ -96,7 +96,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "About"
     url = "/about/"
     title = ""
-   [[menu.main]]
+  [[menu.main]]
     weight = 5
     identifier = "donate"
     pre = ""
