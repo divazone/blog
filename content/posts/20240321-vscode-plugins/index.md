@@ -1,7 +1,7 @@
 ---
 title: "我在VS Code裡面用了哪些插件"
 date: 2024-03-21T13:54:00+08:00
-lastmod: 2024-03-21T13:54:00+08:00
+lastmod: 2024-03-25T09:03:00+08:00
 draft: false
 author: "Divazone King"
 authorLink: ""
@@ -59,6 +59,32 @@ categories: ["vscode"]
 * [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) - VS Code主題
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - VS Code icon主題
 
+## settings.json設定
+```json
+{
+    "oneDarkPro.editorTheme": "One Dark Pro Darker",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    },
+	"flake8.args": [
+        "--max-line-length=100",
+        "--ignore=E131,E302"
+    ],
+    "black-formatter.args": [
+        "--line-length=100",
+        "--skip-string-normalization"
+    ],
+	"isort.args": [
+        "--src=${workspaceFolder}",
+        "--line-length=100",
+	],
+	"isort.check": true,
+    "autoDocstring.docstringFormat": "google-notypes",
+}
+```
 
 
 
