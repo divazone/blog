@@ -62,12 +62,14 @@ categories: ["vscode"]
 ## settings.json設定
 ```json
 {
-    "oneDarkPro.editorTheme": "One Dark Pro Darker",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro Darker",
+
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
 		"editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    },
+            "source.organizeImports": "explicit"
+        }
     },
 	"flake8.args": [
         "--max-line-length=100",
@@ -79,7 +81,7 @@ categories: ["vscode"]
     ],
 	"isort.args": [
         "--src=${workspaceFolder}",
-        "--line-length=100",
+        "--line-length=100"
 	],
 	"isort.check": true,
     "autoDocstring.docstringFormat": "google-notypes",
