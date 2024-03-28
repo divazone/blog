@@ -1,5 +1,5 @@
 ---
-title: "在JAVA中建立Hibernate SessionFactory的三種方法"
+title: "在Java中建立Hibernate SessionFactory的三種方法"
 date: 2023-05-08T11:00:00+08:00
 lastmod: 2024-03-08T09:01:00+08:00
 draft: false
@@ -12,7 +12,7 @@ categories: ["java"]
 方法有這三種
 
 1. 使用hibernate.cfg.xml文件建立Hibernate SessionFactory
-2. 使用Metatada和ServiceRegistry class在Hibernate中建立SessionFactory
+2. 使用Java HashMap和ServiceRegistry class在Hibernate中建立SessionFactory
 3. 從JPA的EntityManager中獲得Hibernate SessionFactory
 
 ## 1. 使用hibernate.cfg.xml文件建立Hibernate SessionFactory
@@ -42,7 +42,7 @@ categories: ["java"]
 </hibernate-configuration>
 ```
 
-接著在就可以在JAVA內去建立Hibernate SessionFactory:
+接著在就可以在Java內去建立Hibernate SessionFactory:
 
 ```java
 public static Session getCurrentSessionFromConfig() {
@@ -56,7 +56,7 @@ public static Session getCurrentSessionFromConfig() {
 }
 ```
 
-## 2. 使用Metatada和ServiceRegistry class在Hibernate中建立SessionFactory
+## 2. 使用Java HashMap和ServiceRegistry class在Hibernate中建立SessionFactory
 
 ~~個人覺得用xml檔來儲存像是資料庫位址與帳密實在是太危險，好在能夠使用一個HashMap來把資料儲存起來傳送給ServiceRegistry，這樣就不需要去建立hibernate.cfg.xml了~~
 
