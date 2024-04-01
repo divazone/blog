@@ -304,7 +304,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # 主页的社交信息设置
   [params.social]
     GitHub = "divazone"
-    Linkedin = "divazone"
+    Linkedin = "divazone-tw"
     Twitter = ""
     Instagram = ""
     Facebook = ""
