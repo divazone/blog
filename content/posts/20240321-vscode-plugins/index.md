@@ -14,6 +14,7 @@ categories: ["vscode"]
 ## Cloud維運
 * [Ansible](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
 * [Terraform](https://marketplace.visualstudio.com/items?itemName=4ops.terraform)
+* [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 * [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
 * [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) - 可使用VS Code遠端連線開發
 * [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) - .env syntax highlighting
