@@ -85,6 +85,8 @@ categories: ["vscode"]
 	],
 	"isort.check": true,
     "autoDocstring.docstringFormat": "google-notypes",
+    "git.ignoreRebaseWarning": true,
+    "files.eol": "\n"
 }
 ```
 
